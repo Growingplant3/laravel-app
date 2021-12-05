@@ -15,7 +15,12 @@ class ExampleTest extends TestCase
     public function testRootGetRequest()
     {
         $response = $this->get('/');
-
         $response->assertStatus(200);
     }
+
+    // public function testTitle()
+    // {
+    //     $response = $this->get('/');
+    //     $response = assertTitle('Laravel');
+    // }
 }
