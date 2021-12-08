@@ -14,5 +14,8 @@ class RegisterControllerTest extends TestCase
     {
         $response = $this->get(route('register'));
         $response->assertViewIs('auth.register');
+        $response->dumpHeaders();
+        $response->dumpSession();
+        $response->dump();
     }
 }
