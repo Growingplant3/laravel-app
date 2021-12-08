@@ -16,7 +16,7 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function original()
+    public function test_original()
     {
         $this->assertIsString("1");
     }

@@ -23,4 +23,11 @@ class ExampleTest extends TestCase
     //     $response = $this->get('/');
     //     $response = assertTitle('Laravel');
     // }
+
+    // public function test_a_welcome()
+    // {
+    //     $view = $this->view('welcome', ['name' => 'Taylor']);
+        
+    //     $view->assertSee('Taylor');
+    // }
 }
