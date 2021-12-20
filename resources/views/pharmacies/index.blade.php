@@ -14,3 +14,8 @@
         <br>
     </table>
 @endforeach
+
+<div>
+    <a href={{ route('pharmacies.create') }}>薬局新規作成</a><br>
+    <a href={{ route('login') }}>ログインページに戻る</a><br>
+</div>
