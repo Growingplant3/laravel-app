@@ -12,4 +12,9 @@ class PharmacyController extends Controller
         $pharmacies = Pharmacy::all();
         return view('pharmacies.index', compact('pharmacies'));
     }
+
+    public function create()
+    {
+        return view('pharmacies.create');
+    }
 }
