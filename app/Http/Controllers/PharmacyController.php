@@ -15,6 +15,7 @@ class PharmacyController extends Controller
 
     public function create()
     {
-        return view('pharmacies.create');
+        $pharmacy = new Pharmacy();
+        return view('pharmacies.create', compact('pharmacy'));
     }
 }
