@@ -15,7 +15,15 @@ class PharmacyController extends Controller
 
     public function create()
     {
+        return view('pharmacies.create');
+    }
+
+    public function store(Request $request)
+    {
+        $input = $request->except('_token');
         $pharmacy = new Pharmacy();
-        return view('pharmacies.create', compact('pharmacy'));
+        $pharmacy->fill($input)->save();
+
+        return redirect()->route('pharmacies.index');
     }
 }
